@@ -1,0 +1,101 @@
+.html, body{
+    margin:0;
+}
+
+.body{
+    display:flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+.menu_lateral {
+    width: 15%;
+    background-color: aqua;
+    padding: 10px 20px 0px;
+}
+
+.header {
+    background-color: rgb(230, 162, 230);
+    width: 100%;
+    min-height: 100px;
+    max-height: 100px;
+    padding: 20px;
+}
+
+.content{
+    background-color: rgba(245, 249, 249, 0.774);
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.footer {
+    position: relative;
+    background-color: rgb(99, 56, 240);
+    min-height: 150px;
+}
+
+.logo{
+    min-height: 100px;
+    width: 40%;
+    justify-content: left;
+    align-items: left;
+}
+
+.nome_empresa{
+    height: 100%;
+    min-height: 100px;
+    width: 20%;
+}
+
+.tabela_funcionarios {
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    justify-content: center;
+    border: solid 1px black;
+    -webkit-box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);
+    box-shadow: 12px 14px 6px 5px rgba(0,0,0,0.24);  
+}
+
+.tabela_funcionarios tr:nth-child(even){
+            background-color: gray;
+        }
+        
+.tabela_funcionarios tr:hover td {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.tabela_funcionarios thead th{
+    background-color: black;
+    color: white;
+}
+.tabela_funcionarios tfoot td{
+    background-color: lightgray;
+}
+
+.mapa_localizacao{
+    position: absolute;
+    float: right;
+    height: 100%;
+    width: 40%;
+    top: 0;
+    right: 0;
+}
+
+
+
