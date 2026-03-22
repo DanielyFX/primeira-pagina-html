@@ -4,8 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Procedimentos</title>
+    <link rel="stylesheet" href="../base.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="menu_lateral">
+        <h1>Menu</h1>
+        <a href="../menu/funcionarios.html" target="_blank">Funcionarios</a><br>
+        <a href="../menu/procedimentos.html" target="_blank">Procedimentos</a><br>
+        <a href="../menu/sobre_clinica.html" target="_blank">Sobre a clinica</a><br>
+        </div>
+        <div class="main">
+            <div class="header">
+                <a href="../index.html">
+                    <img class="nome_empresa" src="../utils/nome_empresa.png">
+                </a>
+            </div>
+            <div class="content">
+                <h1>Procedimentos</h1><br>
+                <table class="tabela_procedimentos" cellspacing="0" cellpadding="5" summary="Tabela com o nome dos funcionarios">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>Formulário para marcar procedimento</h1><br>
+                <form class="form_marcar_procedimento">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required><br>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input
+                                type="text"
+                                id="cpf"
+                                name="cpf"
+                                placeholder="000.000.000-00"
+                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                                required
+                            >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="procedimento">Procedimento</label>
+                        <select id="procedimento" name="procedimento" required>
+                            <option value="">Selecione o procedimento</option>
+                            <option value="clinica_geral">Clinca Geral</option>
+                            <option value="psicologia">Psicologia</option>
+                            <option value="pediatria">Pediatria</option>
+                            <option value="oftalmologia">Oftalmologia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="midia-content">
+                    <h1>Clínica Geral</h1><br>
+                    <video title="video 'clinica geral'" alt="Um vídeo aleatório" style="display: block;" controls width="600">
+                        <source src="../utils/rua.mp4"/>
+                        Seu navegador não tem suporte para este vídeo
+                        <track src="../utils/legenda.vtt" kind="captions" srclang="pt-br"/>
+                        <track src="../utils/legenda_ingles.vtt" kind="captions" srclang="en"/>
+                    </video>
+                    <h1>Psicologia</h1><br>
+                    <video title="video 'clinica psicologia'" alt="Um vídeo aleatório" style="display: block;" controls width="600">
+                        <source src="../utils/rua.mp4"/>
+                        Seu navegador não tem suporte para este vídeo
+                        <track src="../utils/legenda.vtt" kind="captions" srclang="pt-br"/>
+                        <track src="../utils/legenda_ingles.vtt" kind="captions" srclang="en"/>
+                    </video>
+                    <h1>Pediatria</h1><br>
+                    <video title="video 'pediatria'" alt="Um vídeo aleatório" style="display: block;" controls width="600">
+                        <source src="../utils/rua.mp4"/>
+                        Seu navegador não tem suporte para este vídeo
+                        <track src="../utils/legenda.vtt" kind="captions" srclang="pt-br"/>
+                        <track src="../utils/legenda_ingles.vtt" kind="captions" srclang="en"/>
+                    </video>
+                    <h1>Oftalmologia</h1><br>
+                    <video title="video 'oftalmologia'" alt="Um vídeo aleatório" style="display: block;" controls width="600">
+                        <source src="../utils/rua.mp4"/>
+                        Seu navegador não tem suporte para este vídeo
+                        <track src="../utils/legenda.vtt" kind="captions" srclang="pt-br"/>
+                        <track src="../utils/legenda_ingles.vtt" kind="captions" srclang="en"/>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
